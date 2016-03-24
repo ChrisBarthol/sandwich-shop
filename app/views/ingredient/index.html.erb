@@ -1,0 +1,14 @@
+<table>
+  <tr class="col-xs-16 table-header">
+    <td class="col-xs-4"> Ingredient Name </td>
+    <td class="col-xs-4"> Description </td>
+    <td class="col-xs-4"> Category </td>
+  </tr>
+  <% @ingredients.each do |s| %>
+    <tr class="col-xs-16 separated">
+      <td class="col-xs-4"><%= s.name %></td>
+      <td class="col-xs-4"><%= s.description %></td>
+      <td class="col-xs-4"><%= s.category %></td>
+    </tr>
+  <% end %>
+</table>
