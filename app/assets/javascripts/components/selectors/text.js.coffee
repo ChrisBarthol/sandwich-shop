@@ -6,9 +6,11 @@
 
   render: ->
     React.DOM.div
-      class:"text-field"
+      className:"text-field"
+      React.DOM.label
+        @props.label
       React.DOM.input
         id: @props.element
         type: 'text'
-        class: 'text-inpt'
+        className: 'text-input'
         onChange: @console
