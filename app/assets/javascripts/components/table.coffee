@@ -1,6 +1,6 @@
 @Table=React.createClass
-  getInitalState: ->
-    data: @props.data
+  getInitialState: ->
+    ata: @props.data
 
   _renderColumnHeaders: ->
     for header in @props.headers
@@ -19,15 +19,29 @@
     matches = []
     text = jQuery('#search-ingredients').val()
     substrRegex = new RegExp(text, 'i')
-    jQuery.each @state.data, (i, ingredient) ->
+    jQuery.each @props.data, (i, ingredient) ->
       if substrRegex.test(ingredient.name)
         matches.push(ingredient)
-    debugger
     @setState(data:matches)
 
+  renderSearchFields: ->
+    React.DOM.div
+      className:"container text-center"
+      React.DOM.label
+        className:"fake-class"
+        "Search by Ingredient Name"
+      React.DOM.br
+        className:"fake-class"
+      React.DOM.input
+        id: 'search-ingredients'
+        type: 'text'
+        className: 'search'
+        onChange: @renderNewData
+
   render: ->
-    React.DOM.container
+    React.DOM.div
       className:"wrapper"
+      @renderSearchFields()
       React.DOM.table
         className:"table"
         React.DOM.thead
@@ -38,8 +52,3 @@
         React.DOM.tbody
           className:"fake-class"
           @_renderData()
-      React.DOM.input
-        id: 'search-ingredients'
-        type: 'text'
-        className: 'search'
-        onChange: @renderNewData
