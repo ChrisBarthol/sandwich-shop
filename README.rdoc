@@ -4,12 +4,14 @@
 
 2. Rename database.yml.example to database.yml (or customize)
 
-3. rake db:migrate
+3. Rename secrets.yml.example to secrets.yml (or generate a new one)
 
-4. rake db:seed
+4. rake db:migrat
 
-5. rails s
+5. rake db:seed
 
-6. Visit localhost:3000
+6. rails s
 
-7. Go to ToDo page for instructions
+7. Visit localhost:3000
+
+8. Go to ToDo page for instructions
