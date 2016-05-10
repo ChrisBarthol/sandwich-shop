@@ -6,7 +6,7 @@
 
 3. Rename secrets.yml.example to secrets.yml (or generate a new one)
 
-4. rake db:migrat
+4. rake db:setup
 
 5. rake db:seed
 
