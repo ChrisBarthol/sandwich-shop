@@ -8,10 +8,8 @@
 
 4. rake db:setup
 
-5. rake db:seed
+5. rails s
 
-6. rails s
+6. Visit localhost:3000
 
-7. Visit localhost:3000
-
-8. Go to ToDo page for instructions
+7. Go to ToDo page for instructions
