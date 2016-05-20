@@ -4,6 +4,12 @@ Rails.application.routes.draw do
   resources :todo
   resources :sandwich
   resources :ingredient
+  resources :tutorial do
+    collection do
+      get 'one'
+      get 'two'
+    end
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
