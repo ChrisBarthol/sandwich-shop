@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   resources :ingredient
   resources :tutorial do
     collection do
-      get 'one'
-      get 'two'
+      get 'one_render_method'
+      get 'two_calling_functions'
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.

@@ -4,12 +4,12 @@ class TutorialController < ApplicationController
     @tutorial = "Nothing to see here"
   end
 
-  def one
+  def one_render_method
     @title = "The React Component"
   end
 
-  def two
-    @title = "The Render Function"
+  def two_calling_functions
+    @title = "Calling Functions"
   end
 
 end
