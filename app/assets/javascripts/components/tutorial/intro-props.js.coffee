@@ -10,7 +10,7 @@
       React.DOM.div
         className:"main-content text-center"
         "Instead of defining an initial state in the component we can generalize and pass in any string
-        we want as placeholder text.  Pass in another string for the input placeholder"
+        we want as placeholder text.  Pass in another string for the input placeholder."
       React.createElement('hr', {className: "main-hr"})
       React.DOM.div
         className:"text-field text-center"
