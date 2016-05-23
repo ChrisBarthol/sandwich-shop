@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       get 'one_render_method'
       get 'two_calling_functions'
       get 'three_introduction_to_state'
+      get 'four_props'
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.

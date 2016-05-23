@@ -16,4 +16,8 @@ class TutorialController < ApplicationController
     @title = "Introduction to State"
   end
 
+  def four_props
+    @title = "Passing Data to a Component"
+  end
+
 end
