@@ -11,7 +11,6 @@
   _stringMatcher: (data) ->
     matches = []
     text = jQuery('#typeahead-ingredients').val()
-    debugger
     substrRegex = new RegExp(text, 'i')
     jQuery.each data, (i, str) ->
       if substrRegex.test(str)
@@ -25,7 +24,6 @@
     jQuery.each @props.data, (i, ingredient) ->
       if substrRegex.test(ingredient.name)
         matches.push(ingredient)
-    debugger
     return matches
 
   render: ->

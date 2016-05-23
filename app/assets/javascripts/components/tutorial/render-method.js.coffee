@@ -3,6 +3,7 @@
   render: ->
     React.DOM.div
       className:" wrapper first-component text-center"
+      React.createElement('hr', {className: "main-hr"})
       React.DOM.p
         className:"paragraph"
         "We define the name of the component with an @ symbol and set it to be defined
@@ -15,3 +16,4 @@
         className:"paragraph"
         "In our view we can simple call our new component with:
         <%= react_component(\"One\") %>"
+      React.createElement('hr', {className: "main-hr"})

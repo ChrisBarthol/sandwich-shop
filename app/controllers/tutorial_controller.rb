@@ -12,4 +12,8 @@ class TutorialController < ApplicationController
     @title = "Calling Functions"
   end
 
+  def three_introduction_to_state
+    @title = "Introduction to State"
+  end
+
 end

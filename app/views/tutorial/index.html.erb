@@ -19,13 +19,28 @@
   <hr>
   <table>
     <thead>
-      <tr.text-center>
+      <tr>
+        <th> </th>
         <th> Pages </th>
+        <th> Description </th>
       </tr>
     </head>
     <tbody>
-      <tr><th><%= link_to "First Page", one_render_method_tutorial_index_path, class:"navbar-text"%></th></tr>
-      <tr><th><%= link_to "Second Page", two_calling_functions_tutorial_index_path, class:"navbar-text"%></th></tr>
+      <tr>
+        <th>1.</th>
+        <th><%= link_to "The Render Method", one_render_method_tutorial_index_path, class:"navbar-text"%></th>
+        <th>An introduction to a react component and the all important render method</th>
+      </tr>
+      <tr>
+        <th>2.</th>
+        <th><%= link_to "Calling a Function", two_calling_functions_tutorial_index_path, class:"navbar-text"%></th>
+        <th>Calling a function from the render method</th>
+      </tr>
+      <tr>
+        <th>2.</th>
+        <th><%= link_to "Introduction to State", three_introduction_to_state_tutorial_index_path, class:"navbar-text"%></th>
+        <th>Introduction to a components state.</th>
+      </tr>
     </tbody>
   </table>
 </div>
